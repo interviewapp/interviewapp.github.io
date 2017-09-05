@@ -1,0 +1,433 @@
+/* Styles for FreshTeam */
+
+/* Fresh Colors (〜￣▽￣)〜 ･ﾟ✧
+
+Primary		#2196F3		rgba(33,150,243,1)
+Highlight	#BBDEFB		rgba(25,118,210,1)
+Shadow		#1976D2		rgba(187,222,251,1)
+
+Near Black	#212121		rgba(33,33,33,1)
+
+*/
+
+/* Freshen up highlighted text */
+
+::selection {
+	color: #fff;
+	background: #2196F3;
+}
+
+/* Reset font size at a baseline of 16px and set Arimo as primary font */
+
+body {
+	font-family: 'Arimo', sans-serif;
+	font-size: 16px;
+}
+
+/* Prevent horizontal overflow on mobile browsers */
+
+.wrapper {
+	overflow-x: hidden;
+}
+
+/* Use Avenir Next Pro Condensed Demi for headlines */
+
+h1, h2, h3 {
+	font-family: "AvenirNextLTPro-DemiCn", sans-serif;
+}
+
+/* Freshen up link colors */
+
+a {
+	color: #2196F3;
+}
+
+a:hover {
+	color: #1976D2;
+}
+
+/* Add a bit of space between the input and the button on low resolutions screens */
+
+.input-lg {
+	margin-bottom: 1em;
+}
+
+@media (min-width: 62em) {
+
+	.input-lg {
+		margin-bottom: 0;
+	}
+
+}
+
+/* Freshen up button styles */
+
+.btn-primary {
+	background-color: #2196F3;
+	border-top-color: rgba(255,255,255,.2);
+	border-bottom-color: rgba(0,0,0,.2);
+	border-width: 1px 0;
+	font-weight: 700;
+}
+
+.btn-primary:hover {
+	background-color: #1976D2;
+	border-top-color: rgba(255,255,255,.2);
+	border-bottom-color: rgba(0,0,0,.2);
+	border-width: 1px 0;
+}
+
+/* Redirect notice */
+.redirect-notice {
+	margin-bottom: 0;
+}
+
+/* Main wrapper */
+.main-wrapper {
+	position: relative;
+}
+
+/* Masthead */
+
+.masthead {
+	padding: 1.066666667em;
+	background: rgba(255,255,255,.96);
+}
+
+@media (min-width: 48em) {
+
+	.masthead {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 2em;
+		width: 100%;
+	}
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	font-size: .875em;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+}
+
+.breadcrumbs li:nth-child(1n+2):before {
+	content: '/';
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+/* Add alternating background color and images to the panels */
+
+.row:nth-child(2n+3) {
+	background-color: rgba(0,0,0,.02);
+	background-image:  url("../img/topographic-map@1x.png");
+	background-position: top left;
+	background-repeat: repeat;
+}
+
+/* Freshen up hero */
+
+.fresh-hero {
+	overflow: hidden;
+	background-image: url("../img/topographic-map@1x.png"), linear-gradient(120deg, #69F0AE 0%, #2196F3 100%);
+	background-position: top left;
+	background-repeat: repeat;
+	text-align: center;
+}
+
+.fresh-hero-heading {
+	font-size:  1.75em;
+}
+
+.fresh-hero-heading,
+.fresh-hero-subheading {
+	color: #fff;
+	letter-spacing: .02em;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.16);
+}
+
+.fresh-thank-you {
+	font-size: .875em;
+}
+
+@media (min-width: 48em) {
+
+	.fresh-hero {
+		max-height: 36em;
+		text-align: left;
+	}
+
+	.fresh-hero-panel {
+		max-height: 36em;
+		margin: 0 auto;
+		max-width: 48em;
+		overflow: hidden;
+	}
+
+	.fresh-hero-img {
+		margin-top: 1em;
+	}
+
+	.fresh-hero-text {
+		margin-top: 7.25em;
+	}
+
+	.fresh-hero-heading {
+		margin-bottom: .6em;
+		font-size: 2.25em;
+	}
+	.fresh-hero-subheading {
+		margin-bottom: 2em;
+		font-size: 1em;
+	}
+
+}
+
+@media (min-width: 62em) {
+
+	.fresh-hero {
+		max-height: 40em;
+	}
+
+	.fresh-hero-panel {
+		max-height: 40em;
+		max-width: 70em;
+	}
+
+	.fresh-hero-text {
+		margin-top: 10em;
+	}
+
+	.fresh-hero-heading {
+		font-size: 3em;
+	}
+
+	.fresh-hero-subheading {
+		font-size: 1.25em;
+	}
+}
+
+/* Freshen up panels */
+
+.fresh-press {
+	padding: 2em 0;
+}
+
+.fresh-panel {
+	text-align: center;
+}
+
+.fresh-panel-heading {
+	font-size: 1.75em;
+	letter-spacing: .02em;
+}
+
+.fresh-panel-nyc {
+	text-align: center;
+}
+
+/* Hide all NYC illustrations except Statue of Liberty on low resolutions */
+
+.empire-state-building,
+.chrysler-building,
+.freedom-tower {
+	display: none;
+}
+
+@media (min-width: 48em) {
+
+	.fresh-press {
+		max-width: 48em;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 4em 0;
+	}
+
+	.fresh-panel {
+		height: 36em;
+		margin: 0 auto;
+		max-width: 48em;
+		overflow: hidden;
+		text-align: left;
+	}
+
+	.fresh-flex-panel {
+		margin: 0 auto;
+		max-width: 70em;
+	}
+
+	.fresh-panel-img {
+		margin-top: 4em;
+	}
+
+	.fresh-panel-heading {
+		font-size: 2.25em
+	}
+
+	.fresh-panel-text {
+		margin-top: 10em;
+	}
+
+	.fresh-panel-nyc .fresh-panel-text {
+		margin-top: 5em;
+		text-align: center;
+	}
+
+	.fresh-panel-nyc p {
+		margin-bottom: 2em;
+	}
+
+	.nyc-buildings {
+		margin-top:6.25em;
+		text-align: center;
+	}
+
+	.empire-state-building,
+	.chrysler-building,
+	.freedom-tower {
+		display: inline-block;
+	}
+
+}
+
+@media (min-width: 62em) {
+	.fresh-panel, .fresh-press {
+		max-width: 70em;
+	}
+
+	.fresh-panel-text {
+		margin-top: 13em;
+	}
+
+	.nyc-buildings {
+		margin-top:27em;
+	}
+}
+
+/* Center responsive images on low resoltuions */
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+/* Fresh Press */
+
+blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+blockquote:before {
+	content: "\201C";
+}
+
+blockquote:after {
+	content: "\201D";
+}
+
+cite {
+	display: block;
+	margin-top: 1em;
+	text-align: center;
+}
+
+cite:before {
+	/*content: "\2014";*/
+}
+
+@media (min-width: 48em) {
+	blockquote {
+		font-size: 1.75em;
+	}
+}
+
+/* Freshen up FAQ */
+
+.faq-list {
+	border-top: 1px solid #cbcbcb;
+	padding-top: .5em;
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+.faq-list dt {
+	margin-top: .75em;
+}
+
+.faq-list dd {
+	margin-top: .25em;
+	margin-bottom: 1em;
+	padding-left: 1.5em;
+}
+
+.faq-fig img {
+	width: 100%;
+	border: 1px solid #cbcbcb;
+}
+
+@media (min-width: 48em) {
+
+	.faq-section-title {
+		clear: both;
+	}
+
+	.faq-fig img {
+		float: right;
+		width: 16em;
+		margin: 1.5em;
+	}
+
+}
+
+/* Freshen up footer */
+
+.footer-text {
+	margin: 0;
+	font-size: .875em;
+	text-align: center;
+}
+
+.footer {
+	padding: 2em;
+}
+
+@media (min-width: 48em) {
+
+	.footer {
+	}
+
+}
+
+/**
+ * Widgets: App Store Links
+ */
+.app-store-links
+{
+    list-style-type: none;
+    margin-top: 2rem;
+    padding-left: 0;
+}
+    .app-store-links img
+    {
+        max-height: 4rem;
+        margin-bottom: 1rem;
+        width: auto;
+    }
+    .app-store-links li
+    {
+        display: inline-block;
+    }
+    .app-store-links .app-store-link
+    {
+        margin-right: 2rem;
+    }
