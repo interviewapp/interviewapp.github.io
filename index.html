@@ -9,11 +9,42 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="css/interviewapp.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" ></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <style type="text/css">
+    	.modal {
+		  text-align: center;
+		}
+
+		@media screen and (min-width: 768px) { 
+		  .modal:before {
+		    display: inline-block;
+		    vertical-align: middle;
+		    content: " ";
+		    height: 100%;
+		  }
+		}
+
+		.modal-dialog {
+		  display: inline-block;
+		  text-align: left;
+		  vertical-align: middle;
+		}
+    </style>
   </head>
 <body>
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	        <p>Some text in the modal.</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
   <div id="main-wrapper" class="wrapper" style="position: relative;">
       <div id="logo-masthead" class="masthead">
 	<a href="index.html"><img src="img/interviewapp-logo@1x.png" height="20" srcset="img/interviewapp-logo@2x.png 2x"></a>
@@ -27,7 +58,7 @@
 
               <ul class="app-store-links">
                   <li class="app-store-link">
-                      <a href="https://itunes.apple.com/us/app/interviewapp/idxxxx?ls=1&amp;mt=8" class="app-store-link trackable"><img src="img/button-app-store.png" data-srcset="img/button-app-store@2x.png 2x" alt="InterviewApp for iOS in App Store" width="174" height="48" srcset="img/button-app-store@2x.png 2x"></a>
+                      <a href="#" class="app-store-link trackable"><img src="img/button-app-store.png" data-toggle="modal" data-target="#myModal" data-srcset="img/button-app-store@2x.png 2x" alt="InterviewApp for iOS in App Store" width="174" height="48" srcset="img/button-app-store@2x.png 2x"></a>
                   </li><li class="google-play-link">
                       <a href="https://play.google.com/store/apps/details?id=com.mobile.interviewapp" class="gplay-link trackable"><img src="img/button-google-play.png" data-srcset="img/button-google-play@2x.png 2x" alt="InterviewApp for Android in Google Play" width="144" height="48" srcset="img/button-google-play@2x.png 2x"></a>
                   </li>
