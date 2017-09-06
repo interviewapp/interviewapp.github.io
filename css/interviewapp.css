@@ -124,7 +124,7 @@ a:hover {
 
 .row:nth-child(2n+3) {
 	background-color: rgba(0,0,0,.02);
-	background-image:  url("../img/topographic-map@1x.png");
+	background-image:  url("../img/square@1x.png");
 	background-position: top left;
 	background-repeat: repeat;
 }
@@ -133,7 +133,7 @@ a:hover {
 
 .interviewapp-hero {
 	overflow: hidden;
-	background-image: url("../img/topographic-map@1x.png"), linear-gradient(120deg, #69F0AE 0%, #2196F3 100%);
+	background-image: url("../img/square@1x.png"), linear-gradient(120deg, #69F0AE 0%, #2196F3 100%);
 	background-position: top left;
 	background-repeat: repeat;
 	text-align: center;
