@@ -1,6 +1,4 @@
-/* Styles for FreshTeam */
-
-/* Fresh Colors (〜￣▽￣)〜 ･ﾟ✧
+/* InterviewAPP Colors
 
 Primary		#2196F3		rgba(33,150,243,1)
 Highlight	#BBDEFB		rgba(25,118,210,1)
@@ -10,7 +8,7 @@ Near Black	#212121		rgba(33,33,33,1)
 
 */
 
-/* Freshen up highlighted text */
+/* InterviewAPP up highlighted text */
 
 ::selection {
 	color: #fff;
@@ -37,7 +35,7 @@ h1, h2, h3 {
 	font-family: "Oswald", sans-serif;
 }
 
-/* Freshen up link colors */
+/* InterviewAPP link colors */
 
 a {
 	color: #2196F3;
@@ -61,7 +59,7 @@ a:hover {
 
 }
 
-/* Freshen up button styles */
+/* InterviewAPP button styles */
 
 .btn-primary {
 	background-color: #2196F3;
@@ -128,63 +126,63 @@ a:hover {
 
 .row:nth-child(2n+3) {
 	background-color: rgba(0,0,0,.02);
-	background-image:  url("../img/topographic-map@1x.png");
+	background-image:  url("../img/square@1x.png");
 	background-position: top left;
 	background-repeat: repeat;
 }
 
-/* Freshen up hero */
+/* InterviewAPP up hero */
 
-.fresh-hero {
+.interviewapp-hero {
 	overflow: hidden;
-	background-image: url("../img/topographic-map@1x.png"), linear-gradient(120deg, #69F0AE 0%, #2196F3 100%);
+	background-image: url("../img/square@1x.png"), linear-gradient(120deg, #69F0AE 0%, #2196F3 100%);
 	background-position: top left;
 	background-repeat: repeat;
 	text-align: center;
 }
 
-.fresh-hero-heading {
+.interviewapp-hero-heading {
 	font-size:  1.75em;
 }
 
-.fresh-hero-heading,
-.fresh-hero-subheading {
+.interviewapp-hero-heading,
+.interviewapp-hero-subheading {
 	color: #fff;
 	letter-spacing: .02em;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.16);
 }
 
-.fresh-thank-you {
+.interviewapp-thank-you {
 	font-size: .875em;
 }
 
 @media (min-width: 48em) {
 
-	.fresh-hero {
+	.interviewapp-hero {
 		max-height: 36em;
 		text-align: left;
 	}
 
-	.fresh-hero-panel {
+	.interviewapp-hero-panel {
 		max-height: 36em;
 		margin: 0 auto;
 		max-width: 48em;
 		overflow: hidden;
 	}
 
-	.fresh-hero-img {
+	.interviewapp-hero-img {
 		margin-top: 1em;
 	}
 
-	.fresh-hero-text {
+	.interviewapp-hero-text {
 		margin-top: 7.25em;
 	}
 
-	.fresh-hero-heading {
+	.interviewapp-hero-heading {
 		margin-bottom: .6em;
 		font-size: 2.25em;
 	}
-	.fresh-hero-subheading {
+	.interviewapp-hero-subheading {
 		margin-bottom: 2em;
 		font-size: 1em;
 	}
@@ -193,44 +191,44 @@ a:hover {
 
 @media (min-width: 62em) {
 
-	.fresh-hero {
+	.interviewapp-hero {
 		max-height: 40em;
 	}
 
-	.fresh-hero-panel {
+	.interviewapp-hero-panel {
 		max-height: 40em;
 		max-width: 70em;
 	}
 
-	.fresh-hero-text {
+	.interviewapp-hero-text {
 		margin-top: 10em;
 	}
 
-	.fresh-hero-heading {
+	.interviewapp-hero-heading {
 		font-size: 3em;
 	}
 
-	.fresh-hero-subheading {
+	.interviewapp-hero-subheading {
 		font-size: 1.25em;
 	}
 }
 
-/* Freshen up panels */
+/* InterviewAPP up panels */
 
-.fresh-press {
+.interviewapp-press {
 	padding: 2em 0;
 }
 
-.fresh-panel {
+.interviewapp-panel {
 	text-align: center;
 }
 
-.fresh-panel-heading {
+.interviewapp-panel-heading {
 	font-size: 1.75em;
 	letter-spacing: .02em;
 }
 
-.fresh-panel-nyc {
+.interviewapp-panel-nyc {
 	text-align: center;
 }
 
@@ -244,14 +242,14 @@ a:hover {
 
 @media (min-width: 48em) {
 
-	.fresh-press {
+	.interviewapp-press {
 		max-width: 48em;
 		margin: 0 auto;
 		overflow: hidden;
 		padding: 4em 0;
 	}
 
-	.fresh-panel {
+	.interviewapp-panel {
 		height: 36em;
 		margin: 0 auto;
 		max-width: 48em;
@@ -259,29 +257,29 @@ a:hover {
 		text-align: left;
 	}
 
-	.fresh-flex-panel {
+	.interviewapp-flex-panel {
 		margin: 0 auto;
 		max-width: 70em;
 	}
 
-	.fresh-panel-img {
+	.interviewapp-panel-img {
 		margin-top: 4em;
 	}
 
-	.fresh-panel-heading {
+	.interviewapp-panel-heading {
 		font-size: 2.25em
 	}
 
-	.fresh-panel-text {
+	.interviewapp-panel-text {
 		margin-top: 10em;
 	}
 
-	.fresh-panel-nyc .fresh-panel-text {
+	.interviewapp-panel-nyc .interviewapp-panel-text {
 		margin-top: 5em;
 		text-align: center;
 	}
 
-	.fresh-panel-nyc p {
+	.interviewapp-panel-nyc p {
 		margin-bottom: 2em;
 	}
 
@@ -299,11 +297,11 @@ a:hover {
 }
 
 @media (min-width: 62em) {
-	.fresh-panel, .fresh-press {
+	.interviewapp-panel, .interviewapp-press {
 		max-width: 70em;
 	}
 
-	.fresh-panel-text {
+	.interviewapp-panel-text {
 		margin-top: 13em;
 	}
 
@@ -318,7 +316,7 @@ a:hover {
 	margin: 0 auto;
 }
 
-/* Fresh Press */
+/* InterviewAPP Press */
 
 blockquote {
 	margin: 0;
@@ -352,7 +350,7 @@ cite:before {
 	}
 }
 
-/* Freshen up FAQ */
+/* InterviewAPP up FAQ */
 
 .faq-list {
 	border-top: 1px solid #cbcbcb;
@@ -390,7 +388,7 @@ cite:before {
 
 }
 
-/* Freshen up footer */
+/* InterviewAPP up footer */
 
 .footer-text {
 	margin: 0;
