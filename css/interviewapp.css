@@ -133,7 +133,7 @@ a:hover {
 
 .interviewapp-hero {
 	overflow: hidden;
-	background-image: url("../img/square@1x.png"), linear-gradient(120deg, #69F0AE 0%, #2196F3 100%);
+	background-image: url("../img/square@1x.png"), linear-gradient(120deg, #0f9d57 0%, #FCC95F 100%);
 	background-position: top left;
 	background-repeat: repeat;
 	text-align: center;
